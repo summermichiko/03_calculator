@@ -3,7 +3,7 @@ describe("Calculator", function() {
   var calculator;
 
   beforeEach(function() {
-    calculator = new Calculator(); //Calculator is a class object (using capital C)
+    calculator = new Calculator(); //create a constructor function (capital C)
   });
 
   it("initially has 0", function() {

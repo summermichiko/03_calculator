@@ -1,18 +1,36 @@
-function Calculator() {
-    this.currentValue = 0;
-};
+function Calculator(){
+//   this = {};
+ 
+	 var total = 0;
+	 
+	 this.value = function(){
+	   return total;
+	 }
+	 
+	 this.add = function(num){
+	   total += num;
+	 }
+	 
+	 this.subtract = function(num){
+	   total -= num;
+	 }
+}
 
-Calculator.prototype.value = function() {
-	return currentValue;
-};
+// function Calculator() {
+//     this.currentValue = 0;
+// };
 
-Calculator.prototype.add = function(number) {
-	return this.currentValue += number;
-};
+// Calculator.prototype.value = function() {
+// 	return this.currentValue;
+// };
 
-Calculator.prototype.subtract = function(number) {
-	return this.currentValue -= number;
-};
+// Calculator.prototype.add = function(number) {
+// 	this.currentValue += number;
+// };
+
+// Calculator.prototype.subtract = function(number) {
+// 	this.currentValue -= number;
+// };
 
 
 
